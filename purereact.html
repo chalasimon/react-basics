@@ -12,6 +12,7 @@
 <div id="d1"></div>
 <div id="d2"></div>
 <div id="d3"></div>
+<div id="d4"></div>
 <script>
     // Your JavaScript code can go here
     var x=document.createElement("h1");
@@ -52,7 +53,14 @@
     },"Hello This is React");
     const rootE=ReactDOM.createRoot(document.getElementById('d2'))
     rootE.render(element)
-
+  //option 2
+  const mystyle={style:{
+    backgroundColor:"green",
+    color:"white",
+    padding:"1em"
+  }}
+  const option2elem=React.createElement("p",mystyle,"Hello, This is another paragraph by react")
+   ReactDOM.render(option2elem,document.getElementById('d4'))
 
 </script>
     
