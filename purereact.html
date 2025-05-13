@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <h1>Hello, This is React Tutorial</h1>
+<div id="d1"></div>
+<div id="d2"></div>
+<div id="d3"></div>
+<script>
+    // Your JavaScript code can go here
+    var x=document.createElement("h1");
+    x.innerText="Hello Java!";
+    document.getElementById("d1").appendChild(x);
+     var y=document.createElement("h2");
+     var select= document.createElement("select")
+     var i;
+     const arr=[];
+     for(i=0;i<5;i++){
+        arr[i]=document.createElement("option")
+        arr[i].innerText="value"+i
+        arr[i].value="value"+i;
+     }
+     for(k=1;k<arr.length;k++){
+        select.add(arr[k])
+        select.style.color="green"
+        select.style.borderStyle="solid"
+        select.style.borderColor="gray"
+        select.style.padding="0.5em"
+        select.style.width="200px"
+        select.style.borderRadius="5px"
+        select.setAttribute("class","myselect")
+     }
+     document.getElementById("d3").appendChild(select)
+
+    //example using react
+    const element=React.createElement('h3',{
+        style:{
+            color:"red",
+            border:"1px gray solid",
+            borderRadius:"10px",
+            padding:"0.5em"
+        }
+    },"Hello This is React");
+    const rootE=ReactDOM.createRoot(document.getElementById('d2'))
+    rootE.render(element)
+
+
+</script>
+    
+</body>
+</html>
