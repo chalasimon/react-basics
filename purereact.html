@@ -9,14 +9,16 @@
     <title>Document</title>
 </head>
 <body style="text-align: center;">
+    <!--Pure HTML-->
     <h1>Hello, This is React Tutorial</h1>
-<div id="d1"></div>
-<div id="d2"></div>
-<div id="d3"></div>
-<div id="d4"></div>
-<div id="d5"></div>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
 <script type="text/babel">
-    // Your JavaScript code can go here
+
+    // pure javascript
     var x=document.createElement("h1");
     x.innerText="Hello Java!";
     document.getElementById("d1").appendChild(x);
@@ -55,7 +57,8 @@
     },"Hello This is React");
     const rootE=ReactDOM.createRoot(document.getElementById('d2'))
     rootE.render(element)
-  //option 2
+
+  //option 2 using react
   const mystyle={style:{
     backgroundColor:"green",
     color:"white",
