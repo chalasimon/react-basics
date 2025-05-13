@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.0.0-beta.3/babel.min.js"></script>
     <title>Document</title>
 </head>
 <body style="text-align: center;">
@@ -13,7 +14,8 @@
 <div id="d2"></div>
 <div id="d3"></div>
 <div id="d4"></div>
-<script>
+<div id="d5"></div>
+<script type="text/babel">
     // Your JavaScript code can go here
     var x=document.createElement("h1");
     x.innerText="Hello Java!";
@@ -61,6 +63,10 @@
   }}
   const option2elem=React.createElement("p",mystyle,"Hello, This is another paragraph by react")
    ReactDOM.render(option2elem,document.getElementById('d4'))
+
+   //using babel
+   const z=<h1 style={{color:"red"}}>Hello Babel</h1>;
+   ReactDOM.render(z,document.getElementById('d5'))
 
 </script>
     
